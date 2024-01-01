@@ -6,7 +6,23 @@
     <title>Resume Parser</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-slate-500">
-    <h2>Hello there</h2>
+<body class="bg-slate-200">
+    <div>
+        <div class= "container mx-auto bg-blue-400">
+            <h1 class="text-4xl text-center text-white">Resume Parser</h1>
+            <p class="text-center text-white bg-slate-400">Upload your resume</p>
+        </div>
+        <div class="container mx-auto content-center">
+            <br>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="resume" id="resume" accept=".txt, .pdf, .docx, .dox" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+                focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500">
+                
+                <button class="text-teal-100 rounded-none bg-blue-400" type="submit">Submit</button>
+            </form>
+        </div>
+            
+    </div>
+    
 </body>
 </html>
